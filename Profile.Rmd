@@ -1,0 +1,23 @@
+---
+title: "Profile"
+author: "Meredith Ludlow"
+date: "September 14, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Data Science Profile
+
+The columns are as follows: computer programming, math, statistics, machine learning, domain expertise, presentation skills, and data visualization.
+
+```{r}
+Skills = c("CP", "Math", "Stats", "ML", "DE", "PS", "DV")
+Rankings = c(2, 4, 4, 1, 3, 3, 2)
+Meredith = data.frame(Skills, Rankings)
+
+# Make a bar graph of your data science profile
+barplot(Rankings, main="Data Science Profile", names.arg = Skills)
+```
